@@ -9,7 +9,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  height: 95%;
+  height: 100%;
   width: 100%;
   background-color: rgb(84, 146, 226);
   font-family: "Raleway", sans-serif;
@@ -18,7 +18,7 @@ body {
 
 .bodybox {
   border-radius: 20px;
-  min-height: 95%;
+  min-height: 100%;
   position: relative;
   background-color: rgb(12, 3, 44);
   display: flex;
@@ -51,140 +51,6 @@ body {
   color: rgb(77, 76, 92);
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.left-side {
-  position: absolute;
-  height: 100px;
-  width: 2000px;
-  background: rgb(12, 3, 44);
-  overflow: hidden;
-  z-index: 3;
-}
-
-.right-side {
-  position: absolute;
-  height: 100px;
-  width: 2000px;
-  background: rgb(12, 3, 44);
-  z-index: 3;
-  overflow: hidden;
-}
-.hover {
-  position: absolute;
-  float: left;
-  height: 70px;
-  width: 70px;
-  overflow: hidden;
-}
-
-.bit-top {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  height: 5px;
-  width: 10px;
-  background: #fff;
-}
-
-.bit-top-left {
-  position: absolute;
-  left: 0%;
-  top: 5px;
-  height: 5px;
-  width: 5px;
-  background: #fff;
-}
-
-.bit-top-right {
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  height: 5px;
-  width: 10px;
-  background: #fff;
-}
-
-.bit-top-right-2 {
-  position: absolute;
-  right: 0%;
-  top: 0px;
-  height: 10px;
-  width: 5px;
-  background: #fff;
-}
-
-.bit-bottom-left {
-  position: absolute;
-  bottom: 0%;
-  left: 0px;
-  height: 10px;
-  width: 5px;
-  background: #fff;
-}
-
-.bit-bottom-left-2 {
-  position: absolute;
-  bottom: 0%;
-  left: 0px;
-  height: 5px;
-  width: 10px;
-  background: #fff;
-}
-
-.bit-bottom-right {
-  position: absolute;
-  bottom: 0%;
-  right: 0px;
-  height: 5px;
-  width: 10px;
-  background: #fff;
-}
-.bit-bottom-right-2 {
-  position: absolute;
-  bottom: 0%;
-  right: 0px;
-  height: 10px;
-  width: 5px;
-  background: #fff;
-}
-
-.blur {
-  position: absolute;
-  color: #fefefe;
-  font-family: "Overpass", sans-serif;
-  font-size: 64px;
-  letter-spacing: 20px;
-  margin: auto;
-  padding-left: 20px;
-  width: 100%;
-  filter: blur(5px);
-  overflow: hidden;
-  text-align: left;
-  z-index: 3;
-}
-
-.focus {
-  position: absolute;
-  color: #fefefe;
-  font-family: "Overpass", sans-serif;
-  font-size: 64px;
-  letter-spacing: 20px;
-  margin: auto;
-  padding-left: 18px;
-  width: 100%;
-  filter: blur(0px);
-  overflow: hidden;
-  text-align: left;
-  z-index: 2;
-}
-
-.containerFocus {
-  position: absolute;
-  height: 80vh;
-  padding-top: 20vh;
-  width: 100%;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 670px) {
