@@ -1,52 +1,218 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+@import url("https://fonts.googleapis.com/css?family=Overpass");
 
 html {
-  width: 100%;
+  display: flex;
+  justify-content: center;
   height: 100%;
-  padding: auto;
 }
 body {
-  background-color: rgb(0, 0, 70);
-
-  margin: auto;
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 100%;
+  background-color: rgb(84, 146, 226);
   font-family: "Raleway", sans-serif;
+  min-width: 330px;
 }
 
 .bodybox {
-  margin: auto;
-  position: absolute;
-  height: 95%;
-  width: 95%;
-  background-color: rgb(231, 227, 225);
+  border-radius: 20px;
+  min-height: 95%;
+  position: relative;
+  background-color: rgb(12, 3, 44);
   display: flex;
   justify-content: center;
+  min-width: 300px;
 }
 
 .container {
   text-align: center;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .title {
   font-weight: bold;
   color: transparent;
   font-size: 8em;
-  background: url("rainbow-nebula.jpg") repeat;
-  background-position: 40% 50%;
+  background: url("meije2.jpg") repeat;
+  background-position: 40% 60%;
   background-clip: text;
   -webkit-background-clip: text;
-  position: relative;
   line-height: 90px;
-  padding: 20px;
+  padding: 15px;
   letter-spacing: -8px;
 }
+
 .subtitle {
+  font-size: 1.5em;
   color: rgb(77, 76, 92);
   font-weight: bold;
-  display: block;
   text-transform: uppercase;
-  padding-top: 10px;
+}
+
+.left-side {
+  position: absolute;
+  height: 100px;
+  width: 2000px;
+  background: rgb(12, 3, 44);
+  overflow: hidden;
+  z-index: 3;
+}
+
+.right-side {
+  position: absolute;
+  height: 100px;
+  width: 2000px;
+  background: rgb(12, 3, 44);
+  z-index: 3;
+  overflow: hidden;
+}
+.hover {
+  position: absolute;
+  float: left;
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+}
+
+.bit-top {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 5px;
+  width: 10px;
+  background: #fff;
+}
+
+.bit-top-left {
+  position: absolute;
+  left: 0%;
+  top: 5px;
+  height: 5px;
+  width: 5px;
+  background: #fff;
+}
+
+.bit-top-right {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  height: 5px;
+  width: 10px;
+  background: #fff;
+}
+
+.bit-top-right-2 {
+  position: absolute;
+  right: 0%;
+  top: 0px;
+  height: 10px;
+  width: 5px;
+  background: #fff;
+}
+
+.bit-bottom-left {
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  height: 10px;
+  width: 5px;
+  background: #fff;
+}
+
+.bit-bottom-left-2 {
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  height: 5px;
+  width: 10px;
+  background: #fff;
+}
+
+.bit-bottom-right {
+  position: absolute;
+  bottom: 0%;
+  right: 0px;
+  height: 5px;
+  width: 10px;
+  background: #fff;
+}
+.bit-bottom-right-2 {
+  position: absolute;
+  bottom: 0%;
+  right: 0px;
+  height: 10px;
+  width: 5px;
+  background: #fff;
+}
+
+.blur {
+  position: absolute;
+  color: #fefefe;
+  font-family: "Overpass", sans-serif;
+  font-size: 64px;
+  letter-spacing: 20px;
+  margin: auto;
+  padding-left: 20px;
+  width: 100%;
+  filter: blur(5px);
+  overflow: hidden;
+  text-align: left;
+  z-index: 3;
+}
+
+.focus {
+  position: absolute;
+  color: #fefefe;
+  font-family: "Overpass", sans-serif;
+  font-size: 64px;
+  letter-spacing: 20px;
+  margin: auto;
+  padding-left: 18px;
+  width: 100%;
+  filter: blur(0px);
+  overflow: hidden;
+  text-align: left;
+  z-index: 2;
+}
+
+.containerFocus {
+  position: absolute;
+  height: 80vh;
+  padding-top: 20vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 670px) {
+  .title {
+    font-size: 5em;
+    line-height: 70px;
+  }
+}
+.subtitle {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: 4em;
+    line-height: 60px;
+  }
+  .subtitle {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .title {
+    font-size: 3em;
+    line-height: 45px;
+  }
+  .subtitle {
+    font-size: 0.6em;
+  }
 }
