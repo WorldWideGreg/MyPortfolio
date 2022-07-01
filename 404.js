@@ -1,5 +1,5 @@
 (function () {
-  var addEvent = function (object, type, callback) {
+  let addEvent = function (object, type, callback) {
     if (object == null || typeof object == "undefined") return;
     if (object.addEventListener) {
       object.addEventListener(type, callback, false);
@@ -11,7 +11,7 @@
   };
   function detectMouseMove() {
     // Initial container width
-    var containerWidth = $(".container").outerWidth();
+    let containerWidth = $(".container").outerWidth();
     document.addEventListener("mousemove", function (e) {
       $(".hover").css({
         left: e.pageX,
@@ -19,7 +19,7 @@
       $(".left-side").css({
         left: e.pageX + 75,
       });
-      var rightSideLeft = containerWidth - e.pageX;
+      let rightSideLeft = containerWidth;
       $(".right-side").css({
         right: rightSideLeft,
       });
@@ -29,7 +29,7 @@
 
   function detectTouch() {
     // Initial container width
-    var containerWidth = $(".container").outerWidth();
+    let containerWidth = $(".container").outerWidth();
     document.addEventListener("mousemove", function (e) {
       $(".hover").css({
         left: e.pageX,
@@ -37,17 +37,17 @@
       $(".left-side").css({
         left: e.pageX + 75,
       });
-      var rightSideLeft = containerWidth - e.pageX;
+      let rightSideLeft = containerWidth - e.pageX;
       $(".right-side").css({
         right: rightSideLeft,
       });
     });
   }
-  detectMouseMove();
+  detectTouch();
 
   function touchMove() {
     // Initial container width
-    var containerWidth = $(".container").outerWidth();
+    let containerWidth = $(".container").outerWidth();
     document.addEventListener("touchmove", function (e) {
       $(".hover").css({
         left: e.pageX,
@@ -55,7 +55,7 @@
       $(".left-side").css({
         left: e.pageX + 75,
       });
-      var rightSideLeft = containerWidth - e.pageX;
+      let rightSideLeft = containerWidth - e.pageX;
       $(".right-side").css({
         right: rightSideLeft,
       });
@@ -67,7 +67,7 @@
   function detectInput(inputType) {
     // Detect container width after resizing
     addEvent(window, "resize", function (event) {
-      var containerWidth = $(".container").outerWidth();
+      let containerWidth = $(".container").outerWidth();
       $(document).bind(inputType, function (e) {
         $(".hover").css({
           left: e.pageX,
@@ -75,7 +75,7 @@
         $(".left-side").css({
           left: e.pageX + 75,
         });
-        var rightSideLeft = containerWidth - e.pageX;
+        let rightSideLeft = containerWidth - e.pageX;
         $(".right-side").css({
           right: rightSideLeft,
         });
