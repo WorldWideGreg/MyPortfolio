@@ -22,7 +22,8 @@ body {
   position: relative;
   background-color: rgb(12, 3, 44);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   min-width: 300px;
 }
 
@@ -51,6 +52,59 @@ body {
   color: rgb(77, 76, 92);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.navTitle1 {
+  font-weight: bold;
+  color: transparent;
+  font-size: 3em;
+  background: url("gie.png") repeat;
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 90px;
+  padding: 15px;
+  letter-spacing: -3px;
+  text-shadow: 0 0 170px rgb(236, 124, 19);
+}
+.navTitle2 {
+  font-weight: bold;
+  color: transparent;
+  font-size: 3em;
+  background: url("webdev.jpg") repeat;
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 90px;
+  padding: 15px;
+  letter-spacing: -3px;
+  text-shadow: 0 0 170px rgb(236, 124, 19);
+}
+.navTitle3 {
+  font-weight: bold;
+  color: transparent;
+  font-size: 3em;
+  background: url("anotherProj.png") repeat;
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 90px;
+  padding: 15px;
+  letter-spacing: -3px;
+  text-shadow: 0 0 170px rgb(236, 124, 19);
+}
+.navTitle4 {
+  font-weight: bold;
+  color: transparent;
+  font-size: 3em;
+  background: url("notfound.jpeg") repeat;
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 90px;
+  padding: 15px;
+  letter-spacing: -3px;
+  text-shadow: 0 0 170px rgb(236, 124, 19);
 }
 
 @media screen and (max-width: 670px) {

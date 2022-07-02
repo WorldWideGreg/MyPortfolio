@@ -10,5 +10,9 @@ $(document).ready(function () {
     traY = (4 * mouseY) / 570 + 50;
     console.log(traX);
     $(".title").css({ "background-position": traX + "%" + traY + "%" });
+    $(".navTitle1").css({ "background-position": traX + "%" + traY + "%" });
+    $(".navTitle2").css({ "background-position": traX + "%" + traY + "%" });
+    $(".navTitle3").css({ "background-position": traX + "%" + traY + "%" });
+    $(".navTitle4").css({ "background-position": traX + "%" + traY + "%" });
   });
 });
