@@ -2,37 +2,39 @@
 @import url("https://fonts.googleapis.com/css?family=Overpass");
 
 html {
+  position: static;
   display: flex;
   justify-content: center;
   height: 100%;
 }
 body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 100%;
   background-color: rgb(84, 146, 226);
   font-family: "Raleway", sans-serif;
-  min-width: 330px;
+  position: absolute;
 }
 
 .bodybox {
+  margin: 15px 15px 0px 15px;
+  position: static;
   border-radius: 20px;
   min-height: 100%;
-  position: relative;
+  width: fit-content;
   background-color: rgb(19, 5, 66);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-width: 300px;
+  width: fit-content;
+  height: max-content;
   box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .title {
@@ -81,20 +83,12 @@ a:visited {
   text-decoration: none;
 }
 
-.author {
-  font-size: 13px;
-  margin: 5px 0 25px;
-}
-
-.date {
-  font-size: 13px;
-  font-weight: bold;
-}
-
 /**/
 #projects {
-  width: 1200px;
-  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -35px;
   perspective: 1000;
 }
 
@@ -102,27 +96,22 @@ a:visited {
   width: 400px;
   height: 300px;
   display: inline-block;
-
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -o-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
-
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  position: relative;
 }
 
 #projects .flipper:hover {
@@ -131,7 +120,6 @@ a:visited {
   -o-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-
   -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -140,11 +128,11 @@ a:visited {
 #projects .flipper.blur {
   -webkit-filter: blur(3px);
 
-  -webkit-transform: scale(0.88);
-  -moz-transform: scale(0.88);
-  -o-transform: scale(0.88);
-  -ms-transform: scale(0.88);
-  transform: scale(0.88);
+  -webkit-transform: scale(0.78);
+  -moz-transform: scale(0.78);
+  -o-transform: scale(0.78);
+  -ms-transform: scale(0.78);
+  transform: scale(0.78);
   filter: alpha(opacity=60);
   opacity: 0.2;
 }
