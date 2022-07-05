@@ -1,16 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
 @import url("https://fonts.googleapis.com/css?family=Overpass");
-
-html {
-  position: static;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
 body {
   display: flex;
   justify-content: center;
-  height: 100%;
+  height: 95%;
   width: 100%;
   background-color: rgb(84, 146, 226);
   font-family: "Raleway", sans-serif;
@@ -18,10 +11,11 @@ body {
 }
 
 .bodybox {
-  margin: 15px 15px 0px 15px;
-  position: static;
+  margin: 3% 3% 3% 3%;
+  padding-bottom: 15px;
+  position: absolute;
   border-radius: 20px;
-  min-height: 100%;
+  min-height: 95%;
   width: fit-content;
   background-color: rgb(19, 5, 66);
   background-size: cover;
@@ -210,6 +204,11 @@ footer ul {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.emptySpace {
+  height: 100px;
+  width: fit-content;
 }
 
 @media screen and (max-width: 670px) {
