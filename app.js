@@ -25,9 +25,3 @@ $("#projects > li").hover(
 $("#projects > li").click(function (e) {
   $(this).addClass("clicked");
 });
-
-$(".round").click(function (e) {
-  e.preventDefault();
-  e.stopPropagation();
-  $(".arrow").toggleClass("bounceAlpha");
-});
