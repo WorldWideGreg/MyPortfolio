@@ -11,12 +11,11 @@ body {
 }
 
 .bodybox {
-  margin: 3% 3% 3% 3%;
-  padding-bottom: 15px;
+  margin: 1% 5% 5% 5%;
+  padding-right: 20px;
   position: absolute;
   border-radius: 20px;
   min-height: 95%;
-  width: fit-content;
   background-color: rgb(19, 5, 66);
   background-size: cover;
   display: flex;
@@ -26,7 +25,9 @@ body {
   height: max-content;
   box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.6);
 }
-
+nav {
+  padding-left: 20px;
+}
 .container {
   text-align: center;
 }
