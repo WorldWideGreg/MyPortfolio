@@ -180,6 +180,49 @@ a:visited {
   background: white;
 }
 
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+footer ul {
+  background: radial-gradient(
+    circle,
+    rgba(247, 240, 231, 1) 0%,
+    rgba(255, 234, 211, 1) 35%,
+    rgba(251, 230, 192, 1) 100%
+  );
+  animation: anime 16s linear infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 35%;
+  height: fit-content;
+  padding: 12px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 100px 10px rgb(124, 247, 247, 0.5);
+}
+
+.footerIco {
+  list-style-type: none;
+}
+
+.contact {
+  text-align: center;
+  margin-right: 30px;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
 @media screen and (max-width: 670px) {
   .title {
     font-size: 5em;
@@ -197,15 +240,5 @@ a:visited {
   }
   .subtitle {
     font-size: 0.8em;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .title {
-    font-size: 3em;
-    line-height: 45px;
-  }
-  .subtitle {
-    font-size: 0.6em;
   }
 }
