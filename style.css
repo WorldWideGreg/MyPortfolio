@@ -36,7 +36,7 @@ nav {
   font-weight: bold;
   color: transparent;
   font-size: 8em;
-  background: url("meije2.jpg") repeat;
+  background: url("./img/meije2.jpg") repeat;
   background-position: 40% 60%;
   background-clip: text;
   -webkit-background-clip: text;
