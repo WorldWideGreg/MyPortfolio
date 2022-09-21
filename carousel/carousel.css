@@ -1,14 +1,14 @@
 * {box-sizing:border-box}
 
 body{
-  background-color:  rgb(19, 5, 66);
+  background-color:  rgb(26, 7, 88);
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  max-width: 800px;
+  position: relative;  
   margin: auto;
 }
 
