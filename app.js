@@ -1,3 +1,4 @@
+alert("Refonte totale en cours, veuillez ouvrir cette page via Google Chrome ou Microsoft Edge, Merci...");
 $(document).ready(function () {
   let mouseX, mouseY;
   let ww = $(window).width();
